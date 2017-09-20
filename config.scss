@@ -1,0 +1,16 @@
+$gridi-components-navbar-title-font-family: null !default;
+$gridi-components-navbar-title-font-size: 1.6em !default;
+//Defined logo alt font size for each screens.
+$gridi-components-navbar-title-font-size-for-screens: (
+    s5: 2em,
+) !default;
+
+$gridi-components-navbar-title-line-height: normal !default;
+//Defined logo alt line-height for each screens.
+/*
+$gridi-components-navbar-title-line-height-for-screens: (
+    s1: 2em,
+    ...
+) !default;
+*/
+$gridi-components-navbar-title-color: null !default;
