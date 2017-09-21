@@ -3,7 +3,7 @@
         font-family: $gridi-components-navbar-title-font-family;
     }
     font-size: $gridi-components-navbar-title-font-size;
-    @if variable-exists(gridi-components-navbar-title-font-size-for-screens) {
+    @if is-map($gridi-components-navbar-title-font-size-for-screens) {
         @each $screen-prefix, $sizes in get-screens-map() {
             @if map-has-key($gridi-components-navbar-title-font-size-for-screens, $screen-prefix) {
                 @media(min-width: get-screen-size($screen-prefix, min)) {
@@ -13,7 +13,7 @@
         }
     }
     line-height: $gridi-components-navbar-title-line-height;
-    @if variable-exists(gridi-components-navbar-title-line-height-for-screens) {
+    @if is-map($gridi-components-navbar-title-line-height-for-screens) {
         @each $screen-prefix, $sizes in get-screens-map() {
             @if map-has-key($gridi-components-navbar-title-line-height-for-screens, $screen-prefix) {
                 @media(min-width: get-screen-size($screen-prefix, min)) {
